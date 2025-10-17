@@ -1,13 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import {
-  CalendarDays,
-  FileText,
-  Home,
-  LifeBuoy,
-  Receipt,
-  Settings,
-  CreditCard,
-} from 'lucide-react';
+import { CalendarDays, FileText, Home, Receipt, CreditCard } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const links = [

@@ -44,7 +44,7 @@ export const EventDetailPage = () => {
       const response = await api.put<Event>(`/events/${event.id}`, { status: nextStatus });
       return response.data;
     },
-    onSuccess: (updated) => {
+    onSuccess: () => {
       toast.success('Statut mis à jour.');
       eventQuery.refetch();
     },

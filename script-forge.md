@@ -1,8 +1,8 @@
 # Script de déploiement Forge – M4‑Stage
 
 ```bash
-cd "$FORGE_RELEASE_DIRECTORY"
-bash deploy.sh
+CLEAN_RELEASE_DIR=${FORGE_RELEASE_DIRECTORY%$'\r'}
+bash "$CLEAN_RELEASE_DIR/deploy.sh"
 
 $ACTIVATE_RELEASE()
 $RESTART_QUEUES()

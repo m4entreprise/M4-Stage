@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Normaliser la variable Forge (certaines plateformes ajoutent un \r)
+FORGE_RELEASE_DIRECTORY="${FORGE_RELEASE_DIRECTORY%$'\r'}"
+
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BACKEND_DIR="$ROOT/backend"
 FRONTEND_DIR="$ROOT/frontend"

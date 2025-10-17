@@ -38,11 +38,6 @@ class DatabaseSeeder extends Seeder
             'event_id' => $event->id,
         ]);
 
-        User::factory()->create([
-            'tenant_id' => null,
-            'name' => 'Platform Admin',
-            'email' => 'admin@m4stage.test',
-            'role' => 'platform_admin',
-        ]);
+        $this->call(AdminSeeder::class);
     }
 }

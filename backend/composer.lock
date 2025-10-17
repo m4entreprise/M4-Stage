@@ -6869,9 +6869,7 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
-        }
-    ],
-    "packages-dev": [
+        },
         {
             "name": "fakerphp/faker",
             "version": "v1.24.1",
@@ -6934,7 +6932,9 @@
                 "source": "https://github.com/FakerPHP/Faker/tree/v1.24.1"
             },
             "time": "2024-11-21T13:46:39+00:00"
-        },
+        }
+    ],
+    "packages-dev": [
         {
             "name": "filp/whoops",
             "version": "2.18.4",
